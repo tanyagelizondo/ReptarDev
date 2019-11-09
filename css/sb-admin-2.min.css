@@ -2257,6 +2257,12 @@ fieldset:disabled a.btn {
   border-color: #4e73df;
 }
 
+.btn-turquesa {
+  color: #33DEB0;
+  background-color: #33DEB0;
+  border-color: #33DEB0;
+}
+
 .btn-primary:hover {
   color: #fff;
   background-color: #2e59d9;
@@ -9394,6 +9400,10 @@ a.text-info:hover, a.text-info:focus {
 
 .text-warning {
   color: #f6c23e !important;
+}
+
+.text-darkblue {
+  color: #00006e !important;
 }
 
 a.text-warning:hover, a.text-warning:focus {
