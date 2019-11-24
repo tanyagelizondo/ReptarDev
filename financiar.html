@@ -273,51 +273,77 @@
         <!-- End of Topbar -->
 
         <!-- Begin Page Content -->
-        <div class="container-fluid">
+        <div class="container-fluid" >
     		<!-- Nested Row within Card Body -->
-    	    <div class="row ">
-       		  	<div class="col-lg-15 ">
-       		    	<div class="p-5 ">
+    	    <div class="row " >
+       		  	<div class="col-lg-15">
+       		    	<div class="p-5">
            		  		<div class="text-center">
            		    		<h1 class="h4 text-gray-900 mb-4">Financiamiento del Proyecto</h1>
            		  		</div>
            		  		<form class="user">
            		    		<div class="form-group row">
            		        		<div class="col-sm-4 mb-3 mb-sm-0">
-            		        		<input type="number" class="form-control form-control-user" min="0" id="numVacantes" placeholder="Cantidad">
+            		        		<input type="number"  min="0" id="numVacantes" placeholder="Cantidad">
             		      		</div>
-                          <select>
-                            <optgroup label="Dívisa">
-                              <option value="volvo">Dólar Americano $</option>
-                              <option value="saab">Euro €</option>
-                              <option value="saab">Peso Mexicano $</option>
-                            </optgroup>
-                          </select>
-                          <select>
-                            <optgroup label="Tipo de Tarjeta">
-                              <option value="volvo">Visa</option>
-                              <option value="saab">MasterCard</option>
-                              <option value="saab">American Express</option>
-                              <option value="saab">Union Pay</option>
-                            </optgroup>
-                          </select>
+            		      		<div class="mx-2"></div>
+                          		<select>
+                            		<optgroup label="Dívisa" >
+                              			<option value="volvo">Dólar Americano $</option>
+                             			<option value="saab">Euro €</option>
+                        	      		<option value="saab">Peso Mexicano $</option>
+                            		</optgroup>
+                          		</select>
+                          		<div class="mx-2"></div>
+                          		<select>
+                            		<optgroup label="Tipo de Tarjeta">
+                              			<option value="volvo">Visa</option>
+                              			<option value="saab">MasterCard</option>
+                              			<option value="saab">American Express</option>
+                              			<option value="saab">Union Pay</option>
+                            		</optgroup>
+                          		</select>
            		    		</div>
+           		    		<div class="form-group">
+        	    	    		<label>Nombre en la tarjeta</label>
+            		    		<div class="my-2"></div>
+            		    		<input type ="text" placeholder="Juan Perez"  textarea id="myTextArea" rows="1" cols="20"> </textarea>
+        			    	</div>
     	        		   	<div class="form-group">
         	    	    		<label>Número de Tarjeta</label>
             		    		<div class="my-2"></div>
-            		    		<input type ="password" textarea id="myTextArea" rows="1" cols="20"> </textarea>
+            		    		<input type ="password" placeholder="xxxx-xxxx-xxxx-1234"  textarea id="myTextArea" rows="1" cols="20"> </textarea>
         			    	</div>
-       			    		<div class="form-group">
-           		    			<label>Fecha de Vencimiento</label>
-           		    			<div class="my-2"></div>
-   	         		    		<textarea id="myTextArea" rows="1" cols="2"></textarea>
-                        <textarea id="myTextArea" rows="1" cols="2"></textarea>
-                        <textarea id="myTextArea" rows="1" cols="4"></textarea>
-       				    	</div>
-        				    <div class="form-group">
+       			    		<div class="form-group" id="expiration-date">
+                				<label>Fecha de expiración</label>
+                				<div class="my-2"></div>
+                				<select>
+				                    <option value="01">Enero</option>
+				                    <option value="02">Febrero </option>
+				                    <option value="03">Marzo</option>
+				                    <option value="04">Abril</option>
+				                    <option value="05">Mayo</option>
+				                    <option value="06">Junio</option>
+				                    <option value="07">Julio</option>
+				                    <option value="08">Augosto</option>
+				                    <option value="09">Septiembre</option>
+				                    <option value="10">Octubre</option>
+				                    <option value="11">Noviembre</option>
+				                    <option value="12">Diciembre</option>
+				                </select>
+				                <select>
+				                    <option value="16"> 2019</option>
+				                    <option value="17"> 2020</option>
+				                    <option value="18"> 2021</option>
+				                    <option value="19"> 2022</option>
+				                    <option value="20"> 2023</option>
+				                    <option value="21"> 2024</option>
+				                </select>
+				            </div>
+           				    <div class="form-group">
             			   		<label>Código de Seguridad</label>
             			   		<div class="my-2"></div>
-            		   			<input type = "password" textarea id="myTextArea" rows="1" cols="6"> </textarea>
+            		   			<input type = "password" placeholder="123" textarea id="myTextArea" rows="1" cols="6"> </textarea>
         			   		</div>
 	            	    	<div class="form-group">
                				</div>
@@ -328,13 +354,7 @@
     		    </div>
     		</div>
     	</div>
-    		<!--/div>
 
-
-        </div>
-        <!-- /.container-fluid -->
-
-      </div>
       <!-- End of Main Content -->
 
       <!-- Footer -->
@@ -383,9 +403,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Gracias por su apoyo</h5>
-          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-          </button>
+          
         </div>
         <div class="modal-body">Se ha enviado una confirmación del pago a su correo electrónico</div>
         <div class="modal-footer">
